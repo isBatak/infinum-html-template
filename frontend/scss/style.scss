@@ -48,3 +48,11 @@
 // Utility classes
 @import "../js/vendor/bootstrap-sass-official/assets/stylesheets/bootstrap/utilities";
 @import "../js/vendor/bootstrap-sass-official/assets/stylesheets/bootstrap/responsive-utilities";
+
+@import "../js/vendor/retinajs/src/retina.scss";
+@import "icons";
+@import "buttons";
+@import "header";
+@import "content";
+@import "box";
+@import "footer";

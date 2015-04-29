@@ -1,0 +1,3 @@
+.btn-black {
+  @include button-variant($btn-black-color, $btn-black-bg, $btn-black-border);
+}

@@ -1,0 +1,11 @@
+.apple-icon{
+    background: url('../assets/images/header-logo-apple.png') no-repeat center center;
+    width: 24px;
+    height: 31px;
+    display: inline-block;
+    text-align: right;
+    margin-right: 10px;
+    margin-bottom: -9px;
+    margin-top: -2px;
+    @include at2x('../assets/images/header-logo-apple', png, 24px, 31px);
+}

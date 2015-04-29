@@ -3,13 +3,8 @@
       "template": "default"
 }
 
-        <div id="menuOverlay" class="inner-wrapper">
+{{= it.include("header") }}
 
-            <!-- Main Content -->
-            <div class="container-fluid side-body">
+{{= it.include("content") }}
 
-            </div>
-
-            {{= it.include("footer") }}
-
-        </div>
+{{= it.include("footer") }}

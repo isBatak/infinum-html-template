@@ -1,0 +1,21 @@
+.content-wrapper {
+    background: url('../assets/images/grad-1.png') repeat-x center center;
+    .section{
+        padding: $section-padding 0;
+    }
+    .text-holder{
+        h1{
+            font-weight: 700;
+            margin-bottom: $jumbotron-padding;
+        }
+        &.top-offset{
+            padding-top: 130px;
+            @media (max-width: $screen-md) {
+                padding-top: 0;
+            }
+        }
+        @media (max-width: $screen-md) {
+            text-align: center;
+        }
+    }
+}

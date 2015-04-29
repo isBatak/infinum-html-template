@@ -99,7 +99,10 @@ module.exports = function (grunt) {
         // Autoprefixer setup
         autoprefixer: {
             options: {
-                browsers: ['last 2 versions', 'ie 8', 'ie 9']
+                browsers: ['last 2 versions', 'ie 10'],
+                map: {
+                    inline: false
+                }
             },
             files: {
                 src: 'css/style.css'
@@ -127,7 +130,7 @@ module.exports = function (grunt) {
                 files: [
                     {
                         expand: true,
-                        cwd: 'images',
+                        cwd: 'assets/images',
                         src: '**/*.{png,jpg,jpeg}',
                         dest: 'images'
                     }

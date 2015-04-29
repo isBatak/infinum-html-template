@@ -1,0 +1,66 @@
+.header-wrapper{
+    width: 100%;
+    background: url('../assets/images/header-bg.jpg') top center;
+    padding: 80px 0 0;
+    position: relative;
+    height: 808px;
+    .brand {
+        position:relative;
+        margin-bottom: $jumbotron-padding;
+        padding-top: 150px;
+        img{
+            margin-top: -30px;
+        }
+        .text{
+            margin-left: $panel-body-padding;
+            font-size: 70px;
+            font-weight: 300;
+            @media (max-width: $screen-sm) {
+                font-size: 40px;
+            }
+        }
+        @media (max-width: $screen-md) {
+            padding-top: $jumbotron-padding;
+        }
+        @media (max-width: $screen-sm) {
+            padding-top: 40px;
+            margin-bottom: 15px;
+        }
+    }
+    .tagline{
+        margin-bottom: $jumbotron-padding;
+    }
+    .arrow-wrapper{
+        position: absolute;
+        width: 100%;
+        bottom: 100px;
+        .down-arrow{
+            background: url('../assets/images/header-arrow-dn.png') no-repeat center center;
+            width: 52px;
+            height: 16px;
+            margin: 0 auto;
+            cursor: pointer;
+            cursor: hand;
+            @include at2x('../assets/images/header-arrow-dn', png, 52px, 16px);
+        }
+        @media (max-width: $screen-md) {
+            bottom: 70px;
+        }
+    }
+    .md-height{
+        img{
+            height: auto;
+            @media (max-width: $screen-md) {
+                height: 300px;
+                width:auto;
+            }
+        }
+    }
+    @media (max-width: $screen-md) {
+        text-align: center;
+        padding: 40px 0 0;
+    }
+    @media (max-width: $screen-sm) {
+        padding: 20px 0 0;
+    }
+}

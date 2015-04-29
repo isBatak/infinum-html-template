@@ -1,0 +1,58 @@
+.box{
+    border-radius: 10px;
+    padding: 0 $jumbotron-padding $jumbotron-padding;
+    margin-bottom: $jumbotron-padding;
+    .handle{
+        background: url('../assets/images/handle.png') no-repeat center center;
+        width: 39px;
+        height: 7px;
+        margin: 0 auto;
+        padding: 13px 0 10px 0;
+        @include at2x('../assets/images/handle', png, 39px, 7px);
+    }
+    .handle-white{
+        background: url('../assets/images/handle-white.png') no-repeat center center;
+        width: 39px;
+        height: 7px;
+        margin: 0 auto;
+        padding: 13px 0 10px 0;
+        @include at2x('../assets/images/handle-white', png, 39px, 7px);
+    }
+    .bars{
+        background: url('../assets/images/box-1.png') no-repeat center center;
+        width: 131px;
+        height: 216px;
+        margin: $jumbotron-padding auto 5px auto;
+        @include at2x('../assets/images/box-1', png, 131px, 216px);
+    }
+    .signs{
+        background: url('../assets/images/box-2.png') no-repeat center center;
+        width: 207px;
+        height: 127px;
+        margin: 97px auto 60px auto;
+        @include at2x('../assets/images/box-2', png, 207px, 127px);
+    }
+    .labels{
+        margin: 60px 0 35px 0;
+        font-size: $font-size-large;
+        .big{
+            font-size: ceil(($font-size-large * 3));
+            line-height: 30px;
+        }
+        p{
+            margin: 0 0 5px;
+        }
+    }
+    &.box-primary{
+        background: $box-primary-color;
+        color: $gray-dark;
+    }
+    &.box-secondary{
+        background: $box-secondary-color;
+        color: $label-color;
+    }
+    &.box-tertiary{
+        background: $box-tertiary-color;
+        color: $label-color;
+    }
+}
